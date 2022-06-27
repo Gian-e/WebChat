@@ -1,0 +1,15 @@
+﻿@model User; 
+<script src="~/js/chat.js"></script>
+<div>
+<h3 id="sender">@Model.Login</h3>
+<div id="chatBox">
+    <div id="messages">
+
+    </div>
+    <form id="chatForm">
+        <input id="message" type="text" />
+        <button id="sendButton" type="submit">Enviar</button>
+    </form>
+
+</div>
+</div>

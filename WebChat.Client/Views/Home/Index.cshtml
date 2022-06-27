@@ -1,0 +1,22 @@
+﻿@model List<User>;
+
+    <script src="~/js/home.js"></script>
+<div class="text-center">
+    <h1 class="display-4">Contatos</h1>
+    @foreach (var user in Model)
+    {
+        <div>
+            <span style="font-size:20px;">@user.Login</span>
+            @if (user.IsOnline)
+            {
+                <span style="color: green">online</span>
+                <button onclick="chat('@user.Login')">Chat</button>
+            }
+            else
+            {
+                <span style="color: green">offline</span>
+            }
+
+        </div>
+    }
+</div>
